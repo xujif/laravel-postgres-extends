@@ -1,0 +1,23 @@
+{
+    "name": "xujif/laravel-pgsql-extends",
+    "description": "extends pgsql supports of laravel",
+    "license": "MIT",
+    "keywords": ["pgsql postgres postgresql laravel schema"],
+    "authors": [
+        {
+            "name": "xujif",
+            "email": "i@xujif.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/support": "5.*",
+        "illuminate/database": "5.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Xujif\\LaravelPgSqlSchema\\": "src/"
+        }
+    }
+}
