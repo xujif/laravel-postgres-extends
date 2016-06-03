@@ -69,8 +69,9 @@ class Blueprint extends BaseBlueprint
         if (preg_match('/^(.+)Array$/', $method, $m)) {
             $t = $m[1];
             $column = array_shift($args);
+            $arrays = isset($args[1]) ? $args[1] : [];
             //shift columt
-            return $this->addColumn($t . 'Array', $column, $args);
+            return $this->addColumn($t . 'Array', $column, compact('arrays'));
         }
         if (in_array($method, $this->extra_types)) {
             $column = array_shift($args);
@@ -83,8 +84,8 @@ class Blueprint extends BaseBlueprint
     /**
      * create a gin index
      *
-     * @param  string|array  $columns
-     * @param  string  $name
+     * @param  string|array $columns
+     * @param  string $name
      * @return \Illuminate\Support\Fluent
      */
     public function gin($columns, $name = null)

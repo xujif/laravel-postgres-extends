@@ -49,9 +49,9 @@ class PostgresGrammar extends BaseGrammar
         }
         if (preg_match('/^type(.+)Array$/', $method, $m)) {
             $t = $m[1];
-            $arrays = isset($args[0]) ? $args[0] : '[]';
+            $fluent = $args[0];
             if (in_array($t, $this->extra_types) || method_exists($this, 'type' . ucfirst($t))) {
-                return $t . $arrays;
+                return $t . $fluent->arrays;
             }
         }
         if (preg_match('/^type(.+)$/', $method, $m)) {
