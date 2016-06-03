@@ -63,6 +63,9 @@ class Blueprint extends BaseBlueprint
         if (method_exists($this, $method)) {
             return call_user_func_array([$this, $method], $args);
         }
+        /**
+         * xxxArray('field','[]')
+         */
         if (preg_match('/^(.+)Array$/', $method, $m)) {
             $t = $m[1];
             $column = array_shift($args);

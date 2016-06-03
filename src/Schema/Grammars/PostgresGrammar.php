@@ -33,6 +33,10 @@ class PostgresGrammar extends BaseGrammar
         'tsvector',
     ];
 
+    /**
+     * @param Fluent $column
+     * @return string
+     */
     protected function typeCharacter(Fluent $column)
     {
         return "character({$column->length})";
@@ -45,9 +49,9 @@ class PostgresGrammar extends BaseGrammar
         }
         if (preg_match('/^type(.+)Array$/', $method, $m)) {
             $t = $m[1];
-
+            $arrays = isset($args[0]) ? $args[0] : '[]';
             if (in_array($t, $this->extra_types) || method_exists($this, 'type' . ucfirst($t))) {
-                return $t . '[]';
+                return $t . $arrays;
             }
         }
         if (preg_match('/^type(.+)$/', $method, $m)) {
@@ -59,6 +63,11 @@ class PostgresGrammar extends BaseGrammar
         throw new \BadMethodCallException("method {$method} not exists");
     }
 
+    /**
+     * @param Blueprint $blueprint
+     * @param Fluent $command
+     * @return mixed
+     */
     public function compileGin(Blueprint $blueprint, Fluent $command)
     {
         $columns = $this->columnize($command->columns);
