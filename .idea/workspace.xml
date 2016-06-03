@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc9adb9f-e478-4eb7-9ae6-17242b32f08b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Eloquent/Traits/PostgresJsonbSupport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Schema/Blueprint.php" afterPath="$PROJECT_DIR$/src/Schema/Blueprint.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php" afterPath="$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php" />
     </list>
     <ignored path="laravel-pgsql-schema.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,14 +25,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PostgresArraySupport.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PostgresArraySupport.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Eloquent/Traits/PostgresArraySupport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="435">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#59#100#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostgresGrammar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blueprint.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Schema/Blueprint.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,14 +87,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php" />
-        <option value="$PROJECT_DIR$/src/Schema/Blueprint.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Eloquent/Traits/PostgresArraySupport.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Utils.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Traits/PostgresJonbSupport.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Traits/PostgresJsonSupprot.php" />
         <option value="$PROJECT_DIR$/src/Eloquent/Traits/PostgresJsonbSupport.php" />
+        <option value="$PROJECT_DIR$/src/Eloquent/Traits/PostgresArraySupport.php" />
+        <option value="$PROJECT_DIR$/vendor/illuminate/database/Schema/Blueprint.php" />
+        <option value="$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php" />
+        <option value="$PROJECT_DIR$/src/Schema/Blueprint.php" />
       </list>
     </option>
   </component>
@@ -85,6 +103,9 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -383,6 +404,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cc9adb9f-e478-4eb7-9ae6-17242b32f08b" name="Default" comment="" />
@@ -391,12 +415,12 @@
       <option name="presentableId" value="Default" />
       <updated>1464871262826</updated>
       <workItem from="1464871263973" duration="6886000" />
-      <workItem from="1464927100705" duration="1205000" />
+      <workItem from="1464927100705" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8091000" />
+    <option name="totallyTimeSpent" value="10913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="19" width="1932" height="1047" extended-state="0" />
@@ -420,6 +444,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -475,22 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Schema/Blueprint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Traits/PostgresJsonSupprot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -519,11 +535,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Eloquent/Traits/PostgresArraySupport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="435">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#59#100#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/illuminate/database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="960" column="71" selection-start-line="960" selection-start-column="60" selection-end-line="960" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schema/Grammars/PostgresGrammar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

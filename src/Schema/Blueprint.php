@@ -69,7 +69,7 @@ class Blueprint extends BaseBlueprint
         if (preg_match('/^(.+)Array$/', $method, $m)) {
             $t = $m[1];
             $column = array_shift($args);
-            $arrays = isset($args[1]) ? $args[1] : [];
+            $arrays = isset($args[1]) ? $args[1] : '[]';
             //shift columt
             return $this->addColumn($t . 'Array', $column, compact('arrays'));
         }
