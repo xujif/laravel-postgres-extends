@@ -4,7 +4,7 @@ namespace Xujif\LaravelPgSqlSchema\Eloquent\Traits;
 use Illuminate\Database\Eloquent\Builder;
 use Xujif\LaravelPgSqlSchema\Eloquent\Utils;
 
-class PostgresArraySupport
+trait PostgresArraySupport
 {
 
     protected function _getAttributeOfPgArray($key)
