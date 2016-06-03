@@ -65,7 +65,7 @@ class Utils
      */
     public static function array2pgArray($arr, $depth = 1)
     {
-        if ($arr == null) {
+        if (is_null($arr)) {
             return null;
         }
         if ($depth == 0) {
