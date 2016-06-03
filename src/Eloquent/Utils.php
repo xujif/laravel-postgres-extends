@@ -57,7 +57,7 @@ class Utils
         }
         return $stack[0][0];
     }
-    
+
     /**
      * @param $arr
      * @param int $depth
@@ -65,6 +65,9 @@ class Utils
      */
     public static function array2pgArray($arr, $depth = 1)
     {
+        if ($arr == null) {
+            return null;
+        }
         if ($depth == 0) {
             $v = strval($arr);
             return preg_replace("/(?:[^\\\\])(\\{|\\})/i", "\\\\\${1}", $v);
