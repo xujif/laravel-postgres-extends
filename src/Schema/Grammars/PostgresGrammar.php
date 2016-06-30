@@ -55,7 +55,7 @@ class PostgresGrammar extends BaseGrammar
             }
         }
         if (preg_match('/^type(.+)$/', $method, $m)) {
-            $t = $m[1];
+            $t = strtolower($m[1]);
             if (in_array($t, $this->extra_types)) {
                 return $t;
             }
