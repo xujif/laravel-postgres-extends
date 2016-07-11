@@ -1,6 +1,8 @@
 <?php
 namespace Xujif\LaravelPgSqlSchema\Eloquent\Traits;
 
+use Illuminate\Database\Eloquent\Builder;
+
 trait PostgresJsonbSupport
 {
 
@@ -17,7 +19,7 @@ trait PostgresJsonbSupport
     public function scopeWherePgJsonb(Builder $builder, $column, $operator, $value)
     {
         if (in_array($operator, ['?|', '?&'])) {
-            $value = Utils::array2pgArray($value);
+            $value = Utils::array2pgArray((array) $value);
         }
         $fun = $this->_operatorToFun($operator);
         if ($fun) {
@@ -25,5 +27,4 @@ trait PostgresJsonbSupport
         }
         return $builder->whereRaw("$column $operator ?", [$value]);
     }
-
 }
