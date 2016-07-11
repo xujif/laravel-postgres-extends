@@ -2,7 +2,7 @@
 namespace Xujif\LaravelPgSqlSchema\Eloquent\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-
+use Xujif\LaravelPgSqlSchema\Eloquent\Utils;
 trait PostgresJsonbSupport
 {
 
