@@ -2,6 +2,8 @@
 namespace Xujif\LaravelPgSqlSchema;
 
 use Illuminate\Database\PostgresConnection as BasePostgresConnection;
+use Xujif\LaravelPgSqlSchema\Schema\PostgresBuilder;
+use Xujif\LaravelPgSqlSchema\Schema\Grammars\PostgresGrammar;
 
 class PostgresConnection extends BasePostgresConnection
 {
@@ -15,7 +17,7 @@ class PostgresConnection extends BasePostgresConnection
         if (is_null($this->schemaGrammar)) {
             $this->useDefaultSchemaGrammar();
         }
-        return new Schema\PostgresBuilder($this);
+        return new PostgresBuilder($this);
     }
 
     /**
@@ -25,7 +27,7 @@ class PostgresConnection extends BasePostgresConnection
      */
     protected function getDefaultSchemaGrammar()
     {
-        return $this->withTablePrefix(new Schema\Grammars\PostgresGrammar);
+        return $this->withTablePrefix(new PostgresGrammar);
     }
 
 }
